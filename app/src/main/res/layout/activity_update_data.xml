@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="16sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtEdit"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Data Mahasiswa" />
+
+        <EditText
+            android:id="@+id/etEditNama"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etEditNim"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/etEditJurusan"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Update Note" />
+
+            <ImageView
+                android:id="@+id/btnUpdate"
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/edit" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

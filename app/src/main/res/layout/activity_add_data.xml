@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:padding="26dp">
+
+    <TextView
+        android:id="@+id/addNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data Mahasiswa"
+        android:textColor="@color/blue"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nama"
+        android:layout_below="@+id/saveButton"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/blue_border"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/titleEditText1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="NIM"
+        android:layout_below="@+id/titleEditText"
+        android:background="@drawable/blue_border"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/titleEditText2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Jurusan"
+        android:layout_below="@+id/titleEditText1"
+        android:background="@drawable/blue_border"
+        android:padding="12dp" />
+
+</RelativeLayout>
